@@ -13,7 +13,7 @@ services:
     volumes:
      - .:/srv/jekyll
      - github_site:/srv/jekyll/_site
-    command: bundle exec jekyll serve --host 0.0.0.0 --force_polling --livereload
+    command: bundle exec jekyll serve --host 0.0.0.0 --force_polling --livereload -V -t
   gitlab-wiki-theme:
     build: 
       context: .
